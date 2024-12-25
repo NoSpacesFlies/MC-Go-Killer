@@ -8,7 +8,7 @@
 - It freezes stupid servers without game packets limiter (aka better altay sofware by default & chicken shit business like divinecraft)
 - disables everything and commands except moving & /help as it is client side
 # Requirements:
-- Linux Server with 2gb *
+- Linux Server with 2gb (or windows10 4gb ram) *
 - Golang (1.23) Min *
 - electric fence (optional)
 # How to
