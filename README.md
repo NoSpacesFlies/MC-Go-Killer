@@ -5,7 +5,7 @@
 - go get github.com/sandertv/gophertunnel/minecraft
 
 # Wha doe thi do?
-- It freezes stupid servers without game packets limiter
+- It freezes stupid servers without game packets limiter (aka better altay sofware by default & chicken shit business like divinecraft)
 - disables everything and commands except moving & /help as it is client side
 # Requirements:
 - Linux Server with 2gb *
