@@ -5,7 +5,8 @@
 - go get github.com/sandertv/gophertunnel/minecraft
 
 # Wha doe thi do?
-- it spams mcpe server consoles *
+- It freezes stupid servers without game packets limiter
+- disables everything and commands except moving & /help as it is client side
 # Requirements:
 - Linux Server with 2gb *
 - Golang (1.23) Min *
